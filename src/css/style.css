@@ -1,0 +1,293 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.app-container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto 4fr;
+  grid-template-areas: "header header" "main main";
+  margin: auto;
+}
+.app-container .navegacao {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  grid-area: header;
+}
+.app-container .principal {
+  width: 100%;
+  grid-area: main;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  color: white;
+}
+.login-container .header {
+  text-align: center;
+}
+.login-container form {
+  height: 200px;
+}
+.login-container form input {
+  width: 350px;
+  height: 50px;
+  font-size: 1.3636363636rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #3966a9;
+  text-align: center;
+  background-color: transparent;
+  margin: 10px 0;
+  color: white;
+  transition: 0.4s;
+}
+.login-container form input:focus {
+  background-color: #1d1d1d;
+  border-radius: 10px 10px 0 0;
+  transition: 0.4s;
+  border-bottom: 2px solid #3966a9;
+}
+.login-container form p {
+  color: red;
+  margin-top: 5px;
+  font-size: 1.1538461538rem;
+  text-shadow: 0 0 3px #FF0000;
+}
+.login-container form button {
+  margin-top: 10px;
+  width: 350px;
+  height: 50px;
+  background-color: #3966a9;
+  color: #fff;
+  font-size: 1.1111111111rem;
+  border: none;
+  transition: 0.4s;
+}
+.login-container form button:hover {
+  background-color: #26426d;
+  color: #fff;
+  transition: 0.4s;
+}
+.nevegacao-container {
+  background-color: #1b1b1b;
+}
+.nevegacao-container .navbar .container-fluid .logo img {
+  width: 100px;
+}
+.nevegacao-container .navbar .container-fluid .links-navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nevegacao-container .navbar .container-fluid .links-navbar .link-navbar {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.nevegacao-container .navbar .container-fluid .links-navbar .link-navbar:hover {
+  border-bottom: 2px solid;
+  transition: 0.4s;
+}
+.nevegacao-container .navbar .botao .myButton {
+  width: 100px;
+  border: none;
+  background-color: #3966a9;
+}
+.nevegacao-container .navbar .botao .myButton:hover {
+  background-color: #26426d;
+  transition: 0.4s;
+}
+.nevegacao-container .navbar .botao .myButton:hover .myBtn-link {
+  color: #fff;
+  transition: 0.4s;
+}
+.nevegacao-container .navbar .botao .myButton .myBtn-link {
+  text-decoration: none;
+  color: white;
+}
+
+.home-container {
+  width: 100%;
+}
+.home-container .sub-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #181818;
+  height: 50px;
+  align-items: center;
+}
+.home-container .sub-nav a {
+  color: white;
+  text-decoration: none;
+}
+.home-container .sub-nav a:hover {
+  color: #3966a9;
+  border-bottom: 2px solid #3966a9;
+  transition: 0.4s;
+}
+.home-container .banner {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
+.home-container .banner img {
+  width: 100%;
+}
+.home-container .banner .title {
+  margin: 1rem;
+}
+.home-container .banner .title h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+.home-container .banner .title h5 {
+  padding: 1rem;
+  margin-bottom: 1rem ;
+  border-radius: 0 0 20px 20px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #3966a9b2;
+}
+.home-container .banner .title p {
+  padding: .5rem;
+  max-width: 1000px;
+  align-self: center;
+}
+.home-container .all-content {
+  width: 100%;
+  margin: 1rem auto;
+  max-width: 1400px;
+}
+.home-container .all-content .funcionamento {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.home-container .all-content .funcionamento header h1 {
+  text-align: center;
+  font-size: 2.3076923077rem;
+}
+.home-container .all-content .funcionamento .funcionamento-content .funcionamento-passos .imagem {
+  text-align: center;
+}
+.home-container .all-content .funcionamento .funcionamento-content .funcionamento-passos .imagem img {
+  width: 300px;
+}
+.home-container .all-content .funcionamento .funcionamento-content .funcionamento-passos .texto p {
+  background-color: #3966a9b2;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.home-container .all-content .vantagens {
+  width: 100%;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+.home-container .all-content .vantagens header {
+  text-align: center;
+}
+.home-container .all-content .vantagens header h1 {
+  font-size: 2.3076923077rem;
+  margin-bottom: 1rem;
+}
+.home-container .all-content .vantagens .lista ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container .banner {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .home-container .banner img {
+    width: 100%;
+  }
+  .home-container .banner .title {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container .banner .title h1 {
+    background-color: transparent;
+    color: black;
+    width: 800px;
+    margin: 2rem auto;
+    margin-bottom: 0;
+  }
+  .home-container .banner .title h5 {
+    border-radius: 10px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .home-container .funcionamento .funcionamento-content .funcionamento-passos {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 12rem;
+    gap: 1rem;
+  }
+  .home-container .contrate {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #181818;
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carrinho {
+    position: fixed;
+    top: 80%;
+  }
+  .drugs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .drugs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carrinho {
+    position: fixed;
+    top: 9%;
+    left: 90%;
+  }
+  .drugs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+@import '../abs/_var'
+.login-container
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: #1b1b1b
+    color: white
+    .navbar
+    .header
+        text-align: center
+    form
+        height: 200px
+        input
+            width: 350px
+            height: 50px
+            font-size: calc($font-size/2.2 )
+            outline: none
+            border: none
+            border-bottom: 2px solid $bg-cor1
+            text-align: center
+            background-color: transparent
+            margin: 10px 0
+            color: white
+            transition: 0.4s
+            &:focus
+                background-color: #1d1d1d
+                border-radius: 10px 10px 0 0
+                transition: 0.4s
+                border-bottom: 2px solid #010346
+        p
+            color: red
+            margin-top: 5px
+            font-size: calc( $font-size/2.6 )
+            text-shadow: 0 0 3px #FF0000
+        button
+            margin-top: 10px
+            width: 350px
+            height: 50px
+            background-color: $bg-cor1
+            font-size: calc( $font-size/2.7 )
+            border: none
+            transition: 0.4s
+            &:hover
+                background-color: #010346
+                color: #fff
+                transition: 0.4s
